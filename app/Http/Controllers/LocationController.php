@@ -56,7 +56,7 @@ class LocationController extends Controller
         $time3 = DB::table('locations')->whereTime('local_time', '>', '21:00:00')->whereTime('local_time', '<', '00:00:00')->count();
 
         //return view('Welcome')->with(['location' => $location, 'weather' => json_decode($weatherResponse)->forecast->forecastday[0]->day]);
-        return view('Welcome')->with(['location' => $location, 'weather' => json_decode($weatherResponse)->forecast->forecastday[0]->day, 'var' => $var, 'time0' => $time0, 'time1' => $time1, 'time2' => $time2, 'time3' => $time3]);
+        return view('welcome')->with(['location' => $location, 'weather' => json_decode($weatherResponse)->forecast->forecastday[0]->day, 'var' => $var, 'time0' => $time0, 'time1' => $time1, 'time2' => $time2, 'time3' => $time3]);
 
 
     }   
