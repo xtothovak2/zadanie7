@@ -9,7 +9,7 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 bg-white border-b border-gray-200">
-                <form action="/" method="post" class="relative text-gray-600">
+                <form action="{{route('search')}}" method="post" class="relative text-gray-600">
                     @csrf 
                     <p class="ml-5 mt-2 mb-2"><strong>Search for your location here:</strong></p>
                     <input type="search" name="location" placeholder="Search" class="bg-gray border h-10 px-5 pr-10 ml-5 text-sm focus:outline-none">
