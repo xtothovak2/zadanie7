@@ -18,7 +18,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::post('/', [LocationController::class, 'search'])->name('search');
+Route::post('/search', [LocationController::class, 'search'])->name('search');
 
 // Route::get('/statistika', [LocationController::class, 'pocet']);
 
